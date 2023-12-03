@@ -45,6 +45,10 @@ TARGET_USES_FPC_FINGERPRINT := true
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gatekeeper.disable_spu=true
 
+# Kernel
+TARGET_USES_DTB_FROM_SOURCE := true
+
+# Power
 PRODUCT_USES_PIXEL_POWER_HAL := true
 
 # Recovery
