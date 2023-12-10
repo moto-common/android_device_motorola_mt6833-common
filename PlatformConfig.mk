@@ -41,4 +41,7 @@ BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET) --tags_offset $(B
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
+# VINTF
+DEVICE_MANIFEST_FILE += $(PLATFORM_COMMON_PATH)/vintf/manifest.xml
+
 include device/motorola/common/CommonConfig.mk
