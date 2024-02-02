@@ -13,12 +13,12 @@
 # limitations under the License.
 
 # Platform Path
-PLATFORM_COMMON_PATH := device/motorola/mt6768-common
+PLATFORM_COMMON_PATH := device/motorola/mt6833-common
 
 # Platform
 TARGET_KERNEL_VERSION := 4.19
 PRODUCT_PLATFORM_MOT := true
-TARGET_BOARD_PLATFORM := mt6768
+TARGET_BOARD_PLATFORM := mt6833
 PRODUCT_USES_MTK_HARDWARE := true
 
 # A/B support
@@ -53,12 +53,11 @@ PRODUCT_USES_PIXEL_POWER_HAL := true
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    $(PLATFORM_COMMON_PATH)/rootdir/init.recovery.mt6768.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6768.rc
+    $(PLATFORM_COMMON_PATH)/rootdir/init.recovery.mt6833.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6833.rc
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=10,10 \
-    ro.vendor.mtk_protocol1_rat_config=Lf/Lt/W/G
+    ro.telephony.default_network=10,10
 
 $(call inherit-product, device/motorola/common/common.mk)
-$(call inherit-product, vendor/motorola/mt6768-common/mt6768-common-vendor.mk)
+$(call inherit-product, vendor/motorola/mt6833-common/mt6833-common-vendor.mk)

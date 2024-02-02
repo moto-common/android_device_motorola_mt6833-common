@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=mt6768-common
+DEVICE=mt6833-common
 VENDOR=motorola
 
 # Load extract_utils and do some sanity checks
